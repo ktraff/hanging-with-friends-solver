@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hanging With Friends - Word Solver</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <div>
+        <input id="word">
+        <button id="findResults">Match</button>
+    </div>
+</body>
+</html>
+
+<script type="text/javascript" src="lib/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="lib/underscore-min.js"></script>
+<script type="text/javascript" src="lib/backbone-min.js"></script>
+<script type="text/javascript" src="lib/hangman.js"></script>
+<script type="text/javascript" src="data/words.js"></script>
+<script type="text/javascript">
+    $(function () { Hangman.app = new Hangman.Views.App({ el: 'body', model: new Hangman.Models.Token() }) });
+</script>
