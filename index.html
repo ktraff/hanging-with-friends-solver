@@ -9,6 +9,7 @@
         <input id="word">
         <button id="findResults">Match</button>
     </div>
+    <div id="matches"></div>
 </body>
 </html>
 
@@ -19,4 +20,9 @@
 <script type="text/javascript" src="data/words.js"></script>
 <script type="text/javascript">
     $(function () { Hangman.app = new Hangman.Views.App({ el: 'body', model: new Hangman.Models.Token() }) });
+</script>
+<script type="text/template" id="matchesTemplate">
+    <% _.each(matches, function (match) { %>
+        <div><%= match.word %></div>
+    <% }); %>
 </script>
