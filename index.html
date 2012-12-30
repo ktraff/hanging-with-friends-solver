@@ -2,25 +2,52 @@
 <html>
 <head>
     <title>Hanging With Friends - Word Solver</title>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" name="Description" content="Solve words with this simple, fast, easy-to-use tool 
+        for the popular online version of hangman, Hanging With Friends.">
 </head>
 <body>
-    <div>
-        <input id="word">
-        <button id="findResults">Match</button>
+    <div id="top">
+        <div id="top-center">
+            <span class="title">hangsolve</span>
+            <div class="sup" title="n.  a simple, fast, easy-to-use word finder for the popular online version of hangman, Hanging With Friends."><span id="sup">1</span></div>
+            <div class="subtitle"><span>n.  a simple, fast, easy-to-use word finder for the popular online version of hangman, Hanging With Friends.</span></div>
+        </div>
     </div>
-    <div id="lettersToGuess"></div>
-    <div id="matches"></div>
+    <div id="middle">
+	    <div id="lettersContainer">
+	       <div id="letters"></div>
+	       <div class="buttons">
+		       <button id="match" class="button">Match</button>
+		       <button id="reset" class="orangeButton">Reset</button>
+		   </div>   
+	    </div>
+	    <div id="results">
+		    <div>
+		        <input id="word">
+		        <button id="findResults">Match</button>
+		        <input id="exclude">
+		    </div>
+		    <div id="lettersToGuess"></div>
+		    <div id="matches"></div>
+		</div>
+	</div>
 </body>
 </html>
 
+<link href="lib/jquery-ui-1.9.2.custom/css/ui-lightness/jquery-ui-1.9.2.custom.min.css" rel="stylesheet" type="text/css" />
+<link href="assets/css/style.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="lib/jquery-1.8.3.min.js"></script>
 <script type="text/javascript" src="lib/underscore-min.js"></script>
 <script type="text/javascript" src="lib/backbone-min.js"></script>
+<script type="text/javascript" src="lib/jquery-ui-1.9.2.custom/js/jquery-ui-1.9.2.custom.min.js"></script>
 <script type="text/javascript" src="lib/hangman.js"></script>
 <script type="text/javascript" src="data/words.js"></script>
 <script type="text/javascript">
     $(function () { Hangman.app = new Hangman.Views.App({ el: 'body', model: new Hangman.Models.Token() }) });
+</script>
+<script type="text/template" id="letterTemplate">
+    <div id="letter-<%= id %>" class="letter-holder inactive"></div>
+    <input class="letter" autocomplete="off" type="text">
 </script>
 <script type="text/template" id="lettersToGuessTemplate">
     <% for(var i = 0; i < lettersToGuess.length; i++) { %>
