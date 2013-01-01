@@ -7,6 +7,7 @@
 </head>
 <body>
     <div id="top">
+        <div id="loading">Loading<img src="assets/images/loading.gif"/></div>
         <div id="top-center">
             <span class="title">hangsolve</span>
             <div class="sup" title="n.  a simple, fast, easy-to-use word finder for the popular online version of hangman, Hanging With Friends."><span id="sup">1</span></div>
@@ -21,15 +22,15 @@
 		       <button id="reset" class="orangeButton">Reset</button>
 		   </div>   
 	    </div>
+	    <div><input id="exclude"/></div>
+	    <div id="lettersToGuess">
+	    </div>
 	    <div id="results">
-		    <div>
-		        <input id="word">
-		        <button id="findResults">Match</button>
-		        <input id="exclude">
-		    </div>
-		    <div id="lettersToGuess"></div>
 		    <div id="matches"></div>
 		</div>
+	</div>
+	<div id="footer">
+	   &copy; 2012 Kyle Traff
 	</div>
 </body>
 </html>
@@ -50,13 +51,16 @@
     <input class="letter" autocomplete="off" type="text">
 </script>
 <script type="text/template" id="lettersToGuessTemplate">
+    <h3>Top Letters</h3>
+    <ol>
     <% for(var i = 0; i < lettersToGuess.length; i++) { %>
-        <span class="letterToGuess"><%= lettersToGuess[i].letter %> (<%= ((lettersToGuess[i].value / totalCount) * 100).toFixed(1) %>%)</span>
+        <li><span class="letterToGuess"><%= lettersToGuess[i].letter %> (<%= ((lettersToGuess[i].value / totalCount) * 100).toFixed(1) %>%)</span></li>
     <% } %>
+    </ol>
 </script>
 <script type="text/template" id="matchesTemplate">
     <% _.each(matches, function (match) { %>
-        <div><%= match.word %></div>
+        <div class="match"><%= match.word %></div>
     <% }); %>
 </script>
 

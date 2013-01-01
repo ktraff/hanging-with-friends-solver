@@ -80,6 +80,16 @@ body {
 	color: white;
 }
 
+#top #loading {
+	color: white;
+	display: none;
+	position: fixed;
+	top: 0;
+	right: 0;
+}
+
+#top #loading img { margin: 0 5px; }
+
 #top #sup {
 	top: 32px;
 	cursor: pointer;
@@ -109,7 +119,6 @@ body {
 
 #middle {
     background-color: #EEEEEE;
-    border-bottom: 1px solid #C8D3E4;
     padding-bottom: 0;
     padding-top: 0;
     position: relative;
@@ -126,6 +135,20 @@ body {
     position: absolute;
     top: -2px;
     width: 353px;
+}
+
+#lettersToGuess {
+    background-color: white;
+    border: 1px solid #CCCCCC;
+    border-radius: 0 0 7px 7px;
+    box-shadow: 1px 2px 4px;
+    display: none;
+    margin: 0 auto;
+    padding: 7px;
+    position: absolute;
+    right: 0;
+    top: -2px;
+    width: 200px;
 }
 
 #letters div.current {
@@ -188,4 +211,21 @@ input.letter {
     z-index: 1000;
 }
 
-#results { padding-top: 65px; }
+#exclude { display: none; }
+
+#results { height: 100%; margin: 0 auto; padding-top: 115px; text-align: center; width: 100%; }
+
+.match { padding: 5px 200px; }
+
+#footer {
+    background-color: #EEEEEE;
+    border-top: 1px dotted #CCCCCC;
+    bottom: 0;
+    clear: both;
+    color: #888888;
+    font-size: 13px;
+    padding-bottom: 10px;
+    padding-right: 2px;
+    padding-top: 10px;
+    text-align: center;
+}
