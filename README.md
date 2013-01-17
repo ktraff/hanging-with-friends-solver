@@ -1,4 +1,6 @@
 hanging-with-friends-solver
 ===========================
 
-A simple javascript engine to find words that match a sequence of letters.
+A simple web app that find words that match a sequence of letters. Since there are already many of these out there, I wanted to do something a little bit different.  Whereas most web apps harness a back-end to process requests, this solution is entirely browser-based.  It is based on a simple Trie (prefix tree), which loads a complete HWF dictionary in manageable segments on load.  Every subsequent request can then be solved without making any calls to the server.
+
+To customize your dictionary, simply edit the data/words.js file to fit your needs.
