@@ -7,7 +7,7 @@
 </head>
 <body>
     <div id="top">
-        <div id="loading">Loading<img src="assets/images/loading.gif"/></div>
+        <div id="loading" class="loading">Loading<img src="assets/images/loading.gif"/></div>
         <div id="top-center">
             <span class="title">hwfsolver</span>
             <div class="sup" title="n.  a simple, fast, easy-to-use word finder for the popular online version of hangman, Hanging With Friends."><span id="sup">1</span></div>
@@ -15,101 +15,104 @@
         </div>
     </div>
     <div id="middle">
-	    <div id="lettersContainer">
-	       <div id="lettersToExclude">
-              <div class="letterRow">
-                  <div class="letterTile">
-                      <div id="letter-a" class="letter-holder">A</div>
-                  </div>
-                  <div class="letterTile">
-                      <div id="letter-b" class="letter-holder">B</div>
-                  </div>
-                  <div class="letterTile">
-                      <div id="letter-c" class="letter-holder">C</div>
-                  </div>
-                  <div class="letterTile">
-                      <div id="letter-d" class="letter-holder">D</div>
-                  </div>
-                  <div class="letterTile">
-                      <div id="letter-e" class="letter-holder">E</div>
-                  </div>
-                  <div class="letterTile">
-                      <div id="letter-f" class="letter-holder">F</div>
-                  </div>
-                  <div class="letterTile">
-                      <div id="letter-g" class="letter-holder">G</div>
-                  </div>
-                  <div class="letterTile">
-                      <div id="letter-h" class="letter-holder">H</div>
-                  </div>
-              </div>
-              <div class="letterRow">
-                  <div class="letterTile">
-                      <div id="letter-i" class="letter-holder">I</div>
-                  </div>
-                  <div class="letterTile">
-                      <div id="letter-j" class="letter-holder">J</div>
-                  </div>
-                  <div class="letterTile">
-                      <div id="letter-k" class="letter-holder">K</div>
-                  </div>
-                  <div class="letterTile">
-                      <div id="letter-l" class="letter-holder">L</div>
-                  </div>
-                  <div class="letterTile">
-                      <div id="letter-m" class="letter-holder">M</div>
-                  </div>
-                  <div class="letterTile">
-                      <div id="letter-n" class="letter-holder">N</div>
-                  </div>
-                  <div class="letterTile">
-                      <div id="letter-o" class="letter-holder">O</div>
-                  </div>
-                  <div class="letterTile">
-                      <div id="letter-p" class="letter-holder">P</div>
-                  </div>
-              </div>
-              <div class="letterRow">
-                  <div class="letterTile">
-                      <div id="letter-q" class="letter-holder">Q</div>
-                  </div>
-                  <div class="letterTile">
-                      <div id="letter-r" class="letter-holder">R</div>
-                  </div>
-                  <div class="letterTile">
-                      <div id="letter-s" class="letter-holder">S</div>
-                  </div>
-                  <div class="letterTile">
-                      <div id="letter-t" class="letter-holder">T</div>
-                  </div>
-                  <div class="letterTile">
-                      <div id="letter-u" class="letter-holder">U</div>
-                  </div>
-                  <div class="letterTile">
-                      <div id="letter-v" class="letter-holder">V</div>
-                  </div>
-                  <div class="letterTile">
-                      <div id="letter-w" class="letter-holder">W</div>
-                  </div>
-                  <div class="letterTile">
-                      <div id="letter-x" class="letter-holder">X</div>
-                  </div>
-              </div>
-              <div class="letterRow last">
-                  <div class="letterTile">
-                      <div id="letter-y" class="letter-holder">Y</div>
-                  </div>
-                  <div class="letterTile">
-                      <div id="letter-z" class="letter-holder">Z</div>
-                  </div>
-              </div>
-           </div> 
-	       <div id="letters"></div>
-	       <div class="buttons">
-		       <button id="match" class="button">Match</button>
-		       <button id="reset" class="orangeButton">Reset</button>
-		   </div>
-	    </div>
+        <div class="centered">
+            <div id="loading" class="loading">Loading Dictionary<img src="assets/images/loading.gif"/></div>
+		    <div id="lettersContainer">
+		       <div id="lettersToExclude">
+	              <div class="letterRow">
+	                  <div class="letterTile">
+	                      <div id="letter-a" class="letter-holder">A</div>
+	                  </div>
+	                  <div class="letterTile">
+	                      <div id="letter-b" class="letter-holder">B</div>
+	                  </div>
+	                  <div class="letterTile">
+	                      <div id="letter-c" class="letter-holder">C</div>
+	                  </div>
+	                  <div class="letterTile">
+	                      <div id="letter-d" class="letter-holder">D</div>
+	                  </div>
+	                  <div class="letterTile">
+	                      <div id="letter-e" class="letter-holder">E</div>
+	                  </div>
+	                  <div class="letterTile">
+	                      <div id="letter-f" class="letter-holder">F</div>
+	                  </div>
+	                  <div class="letterTile">
+	                      <div id="letter-g" class="letter-holder">G</div>
+	                  </div>
+	                  <div class="letterTile">
+	                      <div id="letter-h" class="letter-holder">H</div>
+	                  </div>
+	              </div>
+	              <div class="letterRow">
+	                  <div class="letterTile">
+	                      <div id="letter-i" class="letter-holder">I</div>
+	                  </div>
+	                  <div class="letterTile">
+	                      <div id="letter-j" class="letter-holder">J</div>
+	                  </div>
+	                  <div class="letterTile">
+	                      <div id="letter-k" class="letter-holder">K</div>
+	                  </div>
+	                  <div class="letterTile">
+	                      <div id="letter-l" class="letter-holder">L</div>
+	                  </div>
+	                  <div class="letterTile">
+	                      <div id="letter-m" class="letter-holder">M</div>
+	                  </div>
+	                  <div class="letterTile">
+	                      <div id="letter-n" class="letter-holder">N</div>
+	                  </div>
+	                  <div class="letterTile">
+	                      <div id="letter-o" class="letter-holder">O</div>
+	                  </div>
+	                  <div class="letterTile">
+	                      <div id="letter-p" class="letter-holder">P</div>
+	                  </div>
+	              </div>
+	              <div class="letterRow">
+	                  <div class="letterTile">
+	                      <div id="letter-q" class="letter-holder">Q</div>
+	                  </div>
+	                  <div class="letterTile">
+	                      <div id="letter-r" class="letter-holder">R</div>
+	                  </div>
+	                  <div class="letterTile">
+	                      <div id="letter-s" class="letter-holder">S</div>
+	                  </div>
+	                  <div class="letterTile">
+	                      <div id="letter-t" class="letter-holder">T</div>
+	                  </div>
+	                  <div class="letterTile">
+	                      <div id="letter-u" class="letter-holder">U</div>
+	                  </div>
+	                  <div class="letterTile">
+	                      <div id="letter-v" class="letter-holder">V</div>
+	                  </div>
+	                  <div class="letterTile">
+	                      <div id="letter-w" class="letter-holder">W</div>
+	                  </div>
+	                  <div class="letterTile">
+	                      <div id="letter-x" class="letter-holder">X</div>
+	                  </div>
+	              </div>
+	              <div class="letterRow last">
+	                  <div class="letterTile">
+	                      <div id="letter-y" class="letter-holder">Y</div>
+	                  </div>
+	                  <div class="letterTile">
+	                      <div id="letter-z" class="letter-holder">Z</div>
+	                  </div>
+	              </div>
+	           </div> 
+		       <div id="letters"></div>
+		       <div class="buttons">
+			       <button id="match" class="button">Match</button>
+			       <button id="reset" class="orangeButton">Reset</button>
+			   </div>
+		    </div>
+		</div>
 	    <div><input id="exclude"/></div>
 	    <div id="results">
 		    <div id="matches"></div>
@@ -148,5 +151,18 @@
     <% _.each(matches, function (match) { %>
         <div class="match"><%= match.word %></div>
     <% }); %>
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-37330793-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
 </script>
 

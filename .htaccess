@@ -1,0 +1,2 @@
+# For files already encoded using gzip
+AddEncoding gzip .gz

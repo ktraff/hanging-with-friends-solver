@@ -6,6 +6,8 @@ body {
 	text-align: center;
 }
 
+.centered { text-align: center; width: 100%; }
+
 .button {
     -moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
     -webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
@@ -88,8 +90,11 @@ body {
 	color: white;
 }
 
+.loading {
+    color: white;
+}
+
 #top #loading {
-	color: white;
 	display: none;
 	position: fixed;
 	top: 0;
@@ -295,7 +300,7 @@ input.letter {
 
 #exclude { display: none; }
 
-#results { height: 100%; margin: 0 auto; padding-top: 250px; text-align: center; width: 100%; }
+#results { margin: 0 auto; min-height: 1200px; padding-top: 250px; text-align: center; width: 100%; }
 
 .match { font-size: 18px; padding: 5px 200px; text-shadow: #999 0.1em 0.1em 0.1em; text-transform: uppercase; }
 
