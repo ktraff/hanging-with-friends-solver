@@ -4,6 +4,8 @@
     <title>Hanging With Friends - Word Solver</title>
     <meta charset="UTF-8" name="Description" content="Solve words with this simple, fast, easy-to-use tool 
         for the popular online version of hangman, Hanging With Friends.">
+    <link href="lib/jquery-ui-1.9.2.custom/css/ui-lightness/jquery-ui-1.9.2.custom.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
     <div id="top">
@@ -16,7 +18,7 @@
     </div>
     <div id="middle">
         <div class="centered">
-            <div id="loading" class="loading">Loading Dictionary<img src="assets/images/loading.gif"/></div>
+            <div id="dictLoading" class="loading">Loading Dictionary<img src="assets/images/loading.gif"/></div>
 		    <div id="lettersContainer">
 		       <div id="lettersToExclude">
 	              <div class="letterRow">
@@ -125,14 +127,12 @@
 </body>
 </html>
 
-<link href="lib/jquery-ui-1.9.2.custom/css/ui-lightness/jquery-ui-1.9.2.custom.min.css" rel="stylesheet" type="text/css" />
-<link href="assets/css/style.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="lib/jquery-1.8.3.min.js"></script>
 <script type="text/javascript" src="lib/underscore-min.js"></script>
 <script type="text/javascript" src="lib/backbone-min.js"></script>
 <script type="text/javascript" src="lib/jquery-ui-1.9.2.custom/js/jquery-ui-1.9.2.custom.min.js"></script>
 <script type="text/javascript" src="lib/hangman.js"></script>
-<script type="text/javascript" src="data/words.js"></script>
+<script type="text/javascript" src="data/words.js.gz"></script>
 <script type="text/javascript">
     $(function () { Hangman.app = new Hangman.Views.App({ el: 'body', model: new Hangman.Models.Token() }) });
 </script>

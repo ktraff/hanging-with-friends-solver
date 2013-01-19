@@ -91,10 +91,15 @@ body {
 }
 
 .loading {
-    color: white;
+    color: #666;
+    font-size: 20px;
+    font-weight: bold;
 }
 
+.loading img { margin: 0 5px; }
+
 #top #loading {
+	color: white;
 	display: none;
 	position: fixed;
 	top: 0;
